@@ -1,6 +1,6 @@
-# s21_containers
+# _containers
 
-Implementation of the s21_containers.h. library.
+Implementation of the _containers.h. library.
 
 The russian version of the task can be found in the repository.
 
@@ -12,14 +12,14 @@ The russian version of the task can be found in the repository.
 2. [Chapter II](#chapter-ii) \
    2.1. [Information](#information)
 3. [Chapter III](#chapter-iii) \
-   3.1. [Part 1](#part-1-implementation-of-the-s21_containersh-library)  
-   3.2. [Part 2](#part-2-bonus-implementation-of-the-s21_containersplush-library)  
+   3.1. [Part 1](#part-1-implementation-of-the-_containersh-library)  
+   3.2. [Part 2](#part-2-bonus-implementation-of-the-_containersplush-library)  
    3.3. [Part 3](#part-3-bonus-implementation-of-the-modified-emplace-methods)
 
 
 ## Chapter I
 
-![s21_containers](misc/images/s21_containers.png)
+![_containers](misc/images/_containers.png)
 
 Planet Earth, USA, California, somewhere among the massive containers of the Port of Oakland, 29 October 1993.
 
@@ -97,26 +97,26 @@ There are two main types of containers: sequence and associative containers. To 
 - When writing code it is necessary to follow the Google style
 - Make sure to use iterators
 - Classes must be template
-- Classes must be implemented within the `s21` namespace
+- Classes must be implemented within the `` namespace
 - Prepare full coverage of container classes methods with unit-tests using the GTest library
 - Copying of the Standard Template Library (STL) implementation is not allowed
 - The logic of the Standard Template Library (STL) must be followed (in terms of checks, memory handling and behaviour in abnormal situations)
 
-### Part 1. Implementation of the s21_containers.h library
+### Part 1. Implementation of the _containers.h library
 
-You need to implement the `s21_containers.h` library classes (specifications are given in the relevant material sections, see **"Main containers"**). \
+You need to implement the `_containers.h` library classes (specifications are given in the relevant material sections, see **"Main containers"**). \
 List of classes: `list`, `map`, `queue`, `set`, `stack`, `vector`.
-- Make it as a header file `s21_containers.h` which includes different header files with implementations of the specified containers (`s21_list.h`, `s21_map.h` and etc.) 
+- Make it as a header file `_containers.h` which includes different header files with implementations of the specified containers (`_list.h`, `_map.h` and etc.) 
 - Provide a Makefile for testing the library (with targets clean, test)
 - The classical implementation of containers should be considered as a basis, but the final choice of implementations remains free. Except for the list - it should be implemented via the list structure rather than the array
 
 *Tip*: You can move the same implementation of container methods to base classes. For example, for a queue and a stack, or for a list and a vector. There is a UML diagram of the STL library in materials as *one possible example* of hierarchical construction. However, your implementation does not have to be strictly tied to this UML diagram.
 
-### Part 2. Bonus. Implementation of the s21_containersplus.h library.
+### Part 2. Bonus. Implementation of the _containersplus.h library.
 
-You need to implement the `s21_containersplus.h` library functions (see **"Additional containers"** for specifications). \
+You need to implement the `_containersplus.h` library functions (see **"Additional containers"** for specifications). \
 List of classes to be implemented additionally: `array`, `multiset`.
-- Make it as a header file `s21_containersplus.h` which includes different header files with implementations of the specified containers (`s21_array.h`, `s21_multiset.h`) 
+- Make it as a header file `_containersplus.h` which includes different header files with implementations of the specified containers (`_array.h`, `_multiset.h`) 
 - Provide a Makefile for testing the library (with targets clean, test)
 - The classical implementation of containers should be considered as a basis, but the final choice of the algorithm remains free.
 
