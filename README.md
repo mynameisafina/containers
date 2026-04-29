@@ -2,8 +2,6 @@
 
 Implementation of the _containers.h. library.
 
-The russian version of the task can be found in the repository.
-
 
 ## Contents
 
